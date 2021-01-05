@@ -16,6 +16,7 @@
 		FE60822125A32BB3006491CA /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = FE60822025A32BB3006491CA /* main.m */; };
 		FE60822B25A32BB3006491CA /* LoginDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = FE60822A25A32BB3006491CA /* LoginDemoTests.m */; };
 		FE60823625A32BB3006491CA /* LoginDemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = FE60823525A32BB3006491CA /* LoginDemoUITests.m */; };
+		FEF97E5325A4444900A72A60 /* Version.m in Sources */ = {isa = PBXBuildFile; fileRef = FEF97E5225A4444900A72A60 /* Version.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,6 +55,8 @@
 		FE60823125A32BB3006491CA /* LoginDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LoginDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		FE60823525A32BB3006491CA /* LoginDemoUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LoginDemoUITests.m; sourceTree = "<group>"; };
 		FE60823725A32BB3006491CA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FEF97E5125A4444900A72A60 /* Version.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Version.h; sourceTree = "<group>"; };
+		FEF97E5225A4444900A72A60 /* Version.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Version.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,6 +112,8 @@
 				FE60821125A32BAE006491CA /* SceneDelegate.h */,
 				FE60821225A32BAE006491CA /* SceneDelegate.m */,
 				FE60821425A32BAE006491CA /* ViewController.h */,
+				FEF97E5125A4444900A72A60 /* Version.h */,
+				FEF97E5225A4444900A72A60 /* Version.m */,
 				FE60821525A32BAE006491CA /* ViewController.m */,
 				FE60821725A32BAE006491CA /* Main.storyboard */,
 				FE60821A25A32BB3006491CA /* Assets.xcassets */,
@@ -268,6 +273,7 @@
 			files = (
 				FE60821625A32BAE006491CA /* ViewController.m in Sources */,
 				FE60821025A32BAE006491CA /* AppDelegate.m in Sources */,
+				FEF97E5325A4444900A72A60 /* Version.m in Sources */,
 				FE60822125A32BB3006491CA /* main.m in Sources */,
 				FE60821325A32BAE006491CA /* SceneDelegate.m in Sources */,
 			);

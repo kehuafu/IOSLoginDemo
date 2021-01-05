@@ -49,8 +49,8 @@
                                     <color key="titleShadowColor" systemColor="systemGreenColor"/>
                                 </state>
                                 <connections>
-                                    <action selector="login:" destination="BYZ-38-t0r" eventType="touchUpInside" id="zxP-Eh-VBI"/>
-                                    <segue destination="UUo-B5-Ndg" kind="show" id="ZMA-Zp-cEH"/>
+                                    <action selector="loginButon" destination="BYZ-38-t0r" eventType="touchUpInside" id="Slo-4j-d4x"/>
+                                    <segue destination="UUo-B5-Ndg" kind="show" id="h8M-vq-DXD"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -58,14 +58,14 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
                     <connections>
-                        <outlet property="loginButon" destination="BJl-Gp-cwo" id="wxL-d0-pb7"/>
+                        <outlet property="login" destination="BJl-Gp-cwo" id="U3e-SB-Mhy"/>
                         <outlet property="numberText" destination="J15-f5-jch" id="8dl-ce-AH4"/>
                         <outlet property="passwordText" destination="QKd-px-ija" id="nWb-0g-ag3"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="140.57971014492756" y="65.625"/>
+            <point key="canvasLocation" x="140" y="65.217391304347828"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="3gj-Ja-5Ue">
