@@ -9,9 +9,13 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface Version : NSObject
+@interface Reponse : NSObject
+
+@property(nonatomic,assign)NSNumber * code;
 
 @property(nonatomic,copy) NSString * message;
+
+@property(nonatomic,copy)NSDictionary * data;
 
 +(instancetype)versionWithDic:(NSDictionary*)dic;
 

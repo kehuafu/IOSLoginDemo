@@ -6,7 +6,8 @@
 //
 
 #import "ViewController.h"
-#import "Version.h"
+#import "Reponse.h"
+#import "VersionData.h"
 
 @interface ViewController ()
 @property (strong, nonatomic) IBOutlet UITextField *numberText;
@@ -15,7 +16,9 @@
 
 @property (strong, nonatomic) IBOutlet UIButton *login;
 
-@property(strong,nonatomic) Version* version;
+@property(strong,nonatomic) Reponse* reponse;
+
+@property(strong,nonatomic) VersionData* versionData;
 
 @end
 
@@ -50,11 +53,11 @@
 //        [self.passwordText.text isEqualToString:@"qwe"]) {
 //        return;
 //    }
-    if (![[self.version message] isEqualToString:@"SUCCESS"]) {
-        NSLog(@"跳不了______%@",[self.version message]);
+    if (![[self.reponse message] isEqualToString:@"SUCCESS"]) {
+        NSLog(@"跳不了______%@",[self.reponse message]);
         return;
     }else{
-        NSLog(@"跳_____%@",[self.version message]);
+        NSLog(@"跳_____%@",[self.reponse message]);
     }
 }
 //发送异步请求
@@ -72,8 +75,10 @@
             NSDictionary * dic =[NSJSONSerialization JSONObjectWithData:data options:0 error:NULL];
             //NSLog(@"%@",dic);
             //字典转模型
-            self.version= [Version versionWithDic:dic];
-            NSLog(@"%@",self.version);
+            self.reponse= [Reponse versionWithDic:dic];
+            NSLog(@"字典：%@",self.reponse.data);
+            self.versionData = [VersionData versionDataWithDic:self.reponse.data];
+            NSLog(@"模型：%@",self.versionData);
         }else{
             NSLog(@"服务器内部错误");
         }
